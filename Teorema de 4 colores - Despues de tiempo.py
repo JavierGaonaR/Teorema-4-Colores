@@ -128,6 +128,7 @@ def bfs(inicio):
             for nodo in nodosVecinos:
                 if nodo[1] in coloresDisponibles:
                     del coloresDisponibles[coloresDisponibles.index(nodo[1])]
+                    indexColor = colores.index(coloresDisponibles[0])
             
 
             if not esExplorado(explored, hijo):
