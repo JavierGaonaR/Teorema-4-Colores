@@ -65,13 +65,14 @@ def bfs(inicio):
 
             if i == 0 :
                 j = i + 1
-                
+
             elif i == n:
                 j = n - 1
             
             else:
+                None
 
-
+            # Edit: Aun no selecciona el color distinto a los demas, la parte de arriba lo haria
             if not esExplorado(explored, hijo):
                 explored.append([hijo, colores[i]])
                 queue.append(buscar(hijo))
